@@ -5,10 +5,10 @@ DevAtlas ist eine deutschsprachige Lernplattform für Softwareentwicklung und Ma
 
 | Inhalt | Ort |
 |---|---|
-| Web-App (als App installierbar, offline nutzbar) | `index.html` |
-| Android-App | `download/` |
-| Impressum | `rechtliches/impressum.html` |
-| Datenschutzerklärung | `rechtliches/datenschutz.html` |
+| Web-App (als App installierbar, offline nutzbar) | [https://finn1357.github.io/devatlas/](https://finn1357.github.io/devatlas/) |
+| Android-App | [Download-Seite](https://finn1357.github.io/devatlas/download/) |
+| Impressum | [Impressum](https://finn1357.github.io/devatlas/rechtliches/impressum.html) |
+| Datenschutzerklärung | [Datenschutzerklärung](https://finn1357.github.io/devatlas/rechtliches/datenschutz.html) |
 
 Version 1.2.0. Herausgeber und Kontakt: siehe Impressum.
 
