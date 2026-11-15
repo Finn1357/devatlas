@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Datenschutzerklärung – DevAtlas</title>
+<style>
+:root{color-scheme:light dark;--fg:#0f172a;--muted:#475569;--bg:#f6f7fb;--card:#fff;--line:#e2e8f0;--warn:#b45309;--bad:#b91c1c}
+@media (prefers-color-scheme:dark){:root{--fg:#e7e9f0;--muted:#a3abbd;--bg:#090b11;--card:#11141d;--line:#1d2230;--warn:#fbbf24;--bad:#f87171}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1rem 3rem}
+h1{font-size:1.7rem;margin:.5rem 0 1rem}h2{font-size:1.15rem;margin:2rem 0 .5rem}
+section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.25rem 1rem 1rem;margin-top:1rem}
+p,li{color:var(--fg)}ul{padding-left:1.2rem}.meta{color:var(--muted);font-size:.9rem}
+.missing{color:var(--bad);font-weight:600}.todo{color:var(--warn);font-size:.9rem}
+.draft{border:2px solid var(--bad);border-radius:12px;padding:.75rem 1rem;color:var(--bad);font-weight:600}
+</style>
+</head>
+<body>
+<main>
+<p class="draft">ENTWURF – noch nicht vollständig und nicht zur Veröffentlichung freigegeben.</p>
+<h1>Datenschutzerklärung</h1>
+<p class="meta">DevAtlas 1.2.0</p>
+<section id="verantwortlich"><h2>1. Verantwortlicher</h2>
+<p>Finn Eric Saeger</p>
+<p>Ringstr. 15<br>17039 Zirzow<br>Deutschland</p>
+<p>E-Mail: saegerfinn@gmail.com</p>
+<p>Datenschutzanfragen bitte an die oben genannte Kontaktadresse.</p></section>
+<section id="ueberblick"><h2>2. Das Wichtigste in Kürze</h2>
+<ul><li>DevAtlas hat kein Benutzerkonto, keinen eigenen Server, keine Werbung und keine Analyse- oder Tracking-Werkzeuge.</li><li>Dein Lernfortschritt, deine Notizen und Einstellungen werden ausschließlich auf deinem Gerät gespeichert. Der Herausgeber erhält davon nichts.</li><li>Daten verlassen dein Gerät nur, wenn du Funktionen nutzt, die das Internet brauchen: echte Anfragen im HTTP-Request-Builder, weitere Zusatzpakete im Python-Labor (z. B. pandas) und – bei der Web-Version – der Abruf der Website beim Hosting-Anbieter.</li><li>Fehlerberichte und Feedback werden nie automatisch gesendet. Du entscheidest selbst, ob und wie du sie verschickst.</li></ul></section>
+<section id="lokal"><h2>3. Lokal gespeicherte Daten</h2>
+<p>Damit die von dir genutzten Lernfunktionen funktionieren, speichert DevAtlas auf deinem Gerät: erledigte Lektionen und Artikel, Quiz-, Aufgaben- und Karteikartenstände (Leitner-System), Lernpfad-Fortschritt, Lernaktivität pro Tag, Favoriten, zuletzt angesehene Seiten, Notizen, unterbrochene Lernsitzungen, Einstellungen (z. B. Design, Schriftgröße, Interessen) und einen freiwilligen Anzeigenamen.</p>
+<ul><li>Speicherorte: im Browser bzw. in der App-WebView (localStorage), eine Sicherungskopie in IndexedDB und in der Android-App zusätzlich in den App-Einstellungen von Android (SharedPreferences). Es werden keine Cookies gesetzt.</li><li>Zweck: Bereitstellung der Lernfunktionen, die du ausdrücklich nutzt; die Sicherungskopie schützt vor Datenverlust.</li><li>Speicherdauer: bis du die Daten in DevAtlas löschst (Einstellungen → Daten), die App deinstallierst oder die Websitedaten im Browser entfernst.</li><li>Export: Auf Wunsch erstellst du eine Sicherungsdatei. Wohin du sie überträgst (z. B. E-Mail oder Cloud-Speicher), entscheidest du; dabei gelten die Bedingungen des jeweiligen Dienstes.</li></ul>
+<p class="todo">Hinweis für den Herausgeber: Einschätzung zu prüfen: Für diese Speicherung ist nach § 25 Abs. 2 Nr. 2 TDDDG keine Einwilligung nötig, weil sie für den vom Nutzer ausdrücklich gewünschten Dienst unbedingt erforderlich ist; ein Cookie-Banner ist daher nicht vorgesehen.</p></section>
+<section id="android-backup"><h2>4. Android-Datensicherung</h2>
+<p>Die Android-App erlaubt die Android-Datensicherung (android:allowBackup). Je nach deinen Geräteeinstellungen kann Android die App-Daten – darunter deinen Lernstand – in deinem Google-Konto sichern und bei einer Neuinstallation wiederherstellen. Diese Sicherung erfolgt durch das Betriebssystem bzw. Google, nicht durch DevAtlas; du steuerst sie in den Android-Einstellungen.</p></section>
+<section id="http"><h2>5. HTTP-Request-Builder</h2>
+<p>Die eingebaute Übungs-API läuft vollständig lokal und überträgt nichts. Sendest du dagegen eine echte Anfrage an eine von dir eingegebene Internetadresse, schickt dein Gerät diese Anfrage direkt an den Zielserver – ohne Umweg über DevAtlas.</p>
+<ul><li>Übertragen werden die Adresse (URL), die Methode, die von dir eingetragenen Header und der Inhalt (Body) sowie technisch notwendige Verbindungsdaten wie deine IP-Adresse und die Kennung des Browsers bzw. der WebView.</li><li>DevAtlas sendet keine Cookies oder Zugangsdaten der Seite mit (credentials: omit) und keinen Referrer.</li><li>Für die Verarbeitung beim Zielserver ist dessen Betreiber verantwortlich. Trage keine echten Passwörter oder Tokens ein, wenn du nur übst.</li></ul></section>
+<section id="python"><h2>6. Python-Labor</h2>
+<p>Das Python-Labor nutzt Pyodide (Python als WebAssembly). Python und die Standardbibliothek sind in DevAtlas enthalten: In der Android-App liegen sie im App-Paket, in der Web-Version werden sie vom Server von DevAtlas geladen und danach lokal zwischengespeichert. Dein Python-Code läuft auf deinem Gerät und wird nicht übertragen.</p>
+<p>Ebenfalls enthalten ist NumPy. Nur wenn dein Code ein weiteres Zusatzpaket importiert (z. B. pandas oder SciPy), lädt das Labor dieses Paket von cdn.jsdelivr.net (jsDelivr). Das Labor weist in der Ausgabe darauf hin. Dabei erhält der Betreiber des CDN technisch notwendige Verbindungsdaten wie IP-Adresse, abgerufene Datei, Zeitpunkt und Browserkennung.</p>
+<p class="todo">Hinweis für den Herausgeber: Zu prüfen: Betreiber und Datenschutzhinweise von jsDelivr, mögliche Drittlandübermittlung und Rechtsgrundlage (z. B. Art. 6 Abs. 1 lit. f DSGVO) für das Nachladen von Zusatzpaketen.</p></section>
+<section id="hosting"><h2>7. Website und Web-App</h2>
+<p>Wenn du DevAtlas im Browser aufrufst, verarbeitet der Hosting-Anbieter technisch notwendige Zugriffsdaten (u. a. IP-Adresse, Zeitpunkt, abgerufene Datei, Browserkennung), um die Seite auszuliefern und abzusichern. Nach dem ersten Besuch werden die Dateien für die Offline-Nutzung lokal zwischengespeichert. Schriftarten und Symbole sind in der App enthalten; es werden keine externen Schrift- oder Analysedienste eingebunden.</p>
+<p>Hosting-Anbieter: GitHub Pages (GitHub, Inc., USA)</p>
+<p>Die Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc. (USA). Laut GitHub werden beim Aufruf einer GitHub-Pages-Seite die IP-Adressen der Besucher aus Sicherheitsgründen protokolliert und gespeichert – unabhängig davon, ob man bei GitHub angemeldet ist. Der Herausgeber hat auf diese Protokolle keinen Zugriff. Für Übermittlungen in die USA stützt sich GitHub nach eigenen Angaben auf das EU-U.S. Data Privacy Framework und Standardvertragsklauseln. Weitere Informationen: https://docs.github.com/de/pages/getting-started-with-github-pages/what-is-github-pages</p>
+<p class="todo">Hinweis für den Herausgeber: Zu prüfen: Rechtsgrundlage (z. B. Art. 6 Abs. 1 lit. f DSGVO), Drittlandübermittlung in die USA und ob ein Vertrag zur Auftragsverarbeitung mit GitHub nötig ist. Eine Speicherdauer der Logs nennt GitHub nicht.</p></section>
+<section id="store"><h2>8. App-Stores und Downloads</h2>
+<p>Lädst du die Android-App über Google Play oder eine Download-Seite herunter, verarbeiten der jeweilige Anbieter bzw. Google dabei Daten nach ihren eigenen Datenschutzbestimmungen. DevAtlas erhält dadurch keine personenbezogenen Daten über dich.</p>
+<p>Die Android-App benötigt nur die Berechtigung „Internet“ (für den HTTP-Request-Builder und weitere Zusatzpakete im Python-Labor). Sie enthält keine Werbe-, Analyse- oder Absturzbericht-SDKs.</p></section>
+<section id="kontakt"><h2>9. Kontakt und Feedback</h2>
+<p>Wenn du dem Herausgeber eine E-Mail schreibst oder einen Fehlerbericht schickst, werden die darin enthaltenen Angaben ausschließlich zur Bearbeitung deines Anliegens verwendet. Ein Fehlerbericht aus der App enthält nur, was du vor dem Senden siehst – keine Notizen, keinen Lernstand und keine Inhalte aus dem HTTP-Builder.</p>
+<p class="todo">Hinweis für den Herausgeber: Zu ergänzen: Speicherdauer von Kontaktanfragen und Rechtsgrundlage.</p></section>
+<section id="rechte"><h2>10. Deine Rechte</h2>
+<p>Soweit personenbezogene Daten verarbeitet werden, hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO) sowie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde (Art. 77 DSGVO). Deine lokal gespeicherten Daten kannst du jederzeit selbst exportieren und löschen.</p>
+<p>Zuständige Aufsichtsbehörde für den Herausgeber: Der Landesbeauftragte für Datenschutz und Informationsfreiheit Mecklenburg-Vorpommern, Schloss Schwerin, Lennéstraße 1, 19053 Schwerin, www.datenschutz-mv.de. Du kannst dich auch an die Aufsichtsbehörde deines Wohnorts wenden.</p></section>
+<section id="stand"><h2>11. Stand</h2>
+<p>Diese Datenschutzerklärung gilt für DevAtlas 1.2.0. Sie wird angepasst, wenn sich Funktionen ändern.</p></section>
+<nav class="meta" aria-label="Weitere Seiten"><a href="../">Zur App</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutzerklärung</a> · <a href="../download/">Android-App</a></nav>
+</main>
+</body>
+</html>

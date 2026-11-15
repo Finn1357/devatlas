@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Eigene, von DevAtlas getrennte Policy: Benutzercode darf Inline-Skripte nutzen,
+         aber keine Formulare absenden, keine Plugins laden und nichts einbetten. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' blob: https:; style-src 'unsafe-inline' https:; img-src data: blob: https:; font-src data: https:; media-src data: blob: https:; connect-src https:; form-action 'none'; base-uri 'none'" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DevAtlas Sandbox</title>
+  </head>
+  <body>
+    <script>
+      // Läuft in einem <iframe sandbox="allow-scripts"> ohne allow-same-origin:
+      // eigener, opaker Origin – kein Zugriff auf DevAtlas, dessen Speicher oder Cookies.
+      (function () {
+        window.addEventListener('message', function (e) {
+          if (e.source !== parent) return;
+          var d = e.data || {};
+          if (d.type === 'render-html' && typeof d.html === 'string') {
+            document.open();
+            document.write(d.html);
+            document.close();
+          }
+        });
+        parent.postMessage({ __devatlas: true, type: 'sandbox-ready' }, '*');
+      })();
+    </script>
+  </body>
+</html>
