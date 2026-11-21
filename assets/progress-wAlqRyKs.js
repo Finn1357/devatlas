@@ -1,1 +1,0 @@
-import{a as n}from"./d-lernen-DTUNe89R.js";import{s as r}from"./core-B5XOlJRJ.js";function i(s){const e=n.find(t=>t.id===s);return e?e.stages.flatMap(t=>t.items.map(a=>`pfad:${e.id}/${r(a.label)}`)):[]}function f(s,e){const t=i(s);return{done:t.filter(a=>a in e).length,total:t.length}}export{f as p};

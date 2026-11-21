@@ -10,7 +10,7 @@ DevAtlas ist eine deutschsprachige Lernplattform für Softwareentwicklung und Ma
 | Impressum | [Impressum](https://finn1357.github.io/devatlas/rechtliches/impressum.html) |
 | Datenschutzerklärung | [Datenschutzerklärung](https://finn1357.github.io/devatlas/rechtliches/datenschutz.html) |
 
-Version 1.2.0. Herausgeber und Kontakt: siehe Impressum.
+Version 1.3.0. Herausgeber und Kontakt: siehe Impressum.
 
 Die Dateien werden mit `npm run pages` aus dem Quellcode-Projekt erzeugt und bei jeder neuen Version vollständig ersetzt – Änderungen bitte nicht hier vornehmen.
 
